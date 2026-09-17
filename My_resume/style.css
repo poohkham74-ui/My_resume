@@ -1,0 +1,193 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #e0f2fe 0%, #bae6fd 50%, #f0f9ff 100%); /* พื้นหลังสีฟ้าสดใสไล่เฉด */
+    background-attachment: fixed;
+    color: #1e293b;
+    line-height: 1.8;
+}
+
+/* Header & Navigation - Sky Theme */
+header {
+    background: linear-gradient(135deg, #0284c7, #38bdf8); /* ฟ้าสดใสแบบท้องฟ้า */
+    padding: 25px 8%;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #7dd3fc; /* ขอบเส้นสีฟ้าอ่อน */
+}
+
+header h1 {
+    color: #ffffff; /* ข้อความสีขาวสว่าง */
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px; /* เพิ่มความโค้งมนคล้ายก้อนเมฆ */
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ffffff;
+    color: #0284c7;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Main Container */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Section Cards - สไตล์ก้อนเมฆและท้องฟ้า */
+section {
+    background: rgba(255, 255, 255, 0.85); /* สีขาวโปร่งแสงนุ่มนวล */
+    backdrop-filter: blur(8px);
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.15);
+    border: 1px solid #e0f2fe;
+    border-left: 6px solid #38bdf8; /* แถบซ้ายสีฟ้า */
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    border-color: #7dd3fc;
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.25);
+    transform: translateY(-3px);
+}
+
+section h2 {
+    color: #0284c7;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Profile Image Styles - กรอบสีฟ้าเรืองแสงอ่อนๆ */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 25px;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+    border: 4px solid #ffffff;
+    outline: 3px solid #38bdf8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(56, 189, 248, 0.45);
+}
+
+/* Projects Layout & Cards */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.project-card {
+    border: 1px solid #bae6fd;
+    border-radius: 16px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    color: #0369a1;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+    color: #334155;
+}
+
+.project-card ul {
+    margin: 10px 0 15px 25px;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+    color: #64748b;
+}
+
+/* Global Links */
+a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #0369a1;
+    text-decoration: underline;
+}
+
+/* Responsive Design (Mobile) */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}

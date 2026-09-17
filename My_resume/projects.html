@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Projects</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>My Projects</h2>
+
+            <div class="projects">
+
+                <!-- Project 1: Kinraid -->
+                <article class="project-card">
+                    <h3>ระบบเมนูอาหารแนะนำ คัดกรอง และสุ่มเมนู "Kinraid"</h3>
+                    
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="images/project1.jpg" alt="Kinraid Project Preview" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #22c55e; box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);">
+                    </div>
+
+                    <p>
+                        <strong>ภาพรวมโปรเจกต์:</strong> เว็บไซต์ระบบแนะนำร้านอาหารและเครื่องมือช่วยตัดสินใจสำหรับคนเลือกไม่ได้ 
+                        พร้อมฟังก์ชันคัดกรองวัตถุดิบที่แพ้และการจัดการอเดอร์
+                    </p>
+
+                    <p>
+                        <strong>1. ฟังก์ชันของเว็บ:</strong><br>
+                        - แสดงรายการอาหารที่มีทั้งหมด<br>
+                        - ตัวกรองประเภทอาหารที่อาจแพ้<br>
+                        - ระบบสุ่มเมนู เครื่องมือช่วยตัดสินใจสำหรับคนเลือกไม่ได้<br>
+                        - หน้าต่างแสดงวัตถุดิบ เวลาในการทำ และตัวเลือกการปรับแต่งตามชอบ<br>
+                        - แสดงราคา
+                    </p>
+
+                    <p>
+                        <strong>2. สิ่งที่ฝ่าย User จะได้เห็น:</strong><br>
+                        - ชื่อร้าน + โลโก้<br>
+                        - แถบค้นหา พิมพ์ชื่อเมนูที่ต้องการ<br>
+                        - ปุ่มกรองวัตถุดิบแพ้ เมื่อกดแล้วจะมี Pop-up ให้เลือกปุ่มติ๊กเมนูที่แพ้<br>
+                        - คิดตัง (ระบบคำนวณราคา)<br>
+                        - เบอร์สำหรับติดต่อร้าน
+                    </p>
+
+                    <p>
+                        <strong>3. องค์ประกอบหน้าเว็บ (ปุ่มต่างๆ):</strong><br>
+                        - เมนูอาหาร รูปภาพ พร้อมราคา<br>
+                        - กดที่เมนูเพื่อดูวัตถุดิบ และ Add-on<br>
+                        - ปุ่มสุ่มเมนูอาหาร<br>
+                        - ปุ่มกรองวัตถุดิบที่แพ้<br>
+                        - ปุ่มค้นหา<br>
+                        - ปุ่มรีเซ็ทตัวกรอง + รีเซ็ทเมนูที่ปรับแต่ง
+                    </p>
+                </article>
+
+                <!-- Project 2: Smart Pet Feeder -->
+                <article class="project-card">
+                    <h3>เครื่องให้อาหารสัตว์เลี้ยงอัตโนมัติ "SMART PET FEEDER"</h3>
+                    
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="images/project2.png" alt="Smart Pet Feeder Preview" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #22c55e; box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);">
+                    </div>
+
+                    <p>
+                        <strong>ภาพรวมโปรเจกต์:</strong> ระบบไมโครคอนโทรลเลอร์ (Computer and Embedded Systems) ควบคุมเครื่องให้อาหารสัตว์เลี้ยงอัตโนมัติ[cite: 1] เพื่ออำนวยความสะดวกให้เจ้าของที่ไม่อยู่บ้าน ช่วยให้สัตว์เลี้ยงได้รับอาหารตรงเวลาสม่ำเสมอ
+                    </p>
+
+                    <p>
+                        <strong>1. ฟังก์ชันและการทำงานของระบบ:</strong><br>
+                        - ระบบนาฬิกาเรียลไทม์แสดงผลผ่าน 7-Segment 6 หลัก (HH:MM:SS) โดยใช้เทคนิค Multiplexing<br>
+                        - จ่ายอาหารอัตโนมัติตามเวลาที่กำหนดไว้ (08:00:00 น. และ 18:00:00 น.)<br>
+                        - ระบบควบคุมมอเตอร์อัจฉริยะผ่าน ADC เพื่อปรับความเร็วการหมุน (Fast / Slow / Stop) ลดการค้างของอาหาร<br>
+                        - ปุ่มปรับตั้งค่าเวลา (Hour, Min, Sec) แบบ Manual Setup
+                    </p>
+
+                    <p>
+                        <strong>2. ฮาร์ดแวร์และเทคโนโลยีที่ใช้:</strong><br>
+                        - Microcontroller: PIC16F877A<br>
+                        - Display: 7-Segment Display + BCD-to-7Segment Decoder (IC 7447)<br>
+                        - Motor Driver: IC L293D ควบคุมมอเตอร์จ่ายอาหาร<br>
+                        - Programming Language: ภาษา Assembly (จัดการ Interrupt Service Routine และ Register Control)
+                    </p>
+
+                    <p>
+                        <strong>3. จุดเด่นและข้อดีของโปรเจกต์:</strong><br>
+                        - ใช้ระบบ Interrupt Service Routine ในการนับเวลา ทำให้เวลาเดินตรงและเที่ยงตรงแม้มีการทำงานอื่นอยู่<br>
+                        - ประหยัดการใช้ขา I/O ของไมโครคอนโทรลเลอร์อย่างมีประสิทธิภาพด้วย Multiplexing<br>
+                        - การจ่ายอาหารนุ่มนวล ลดความเสียหายของกลไกด้วยการใช้ ADC ปรับระดับความเร็วมอเตอร์
+                    </p>
+                </article>
+
+                <!-- Project 3: Band Reject Filter (BRF) -->
+                <article class="project-card">
+                    <h3>วงจรกำจัดแถบความถี่ผ่าน (Band-Reject Filter: BRF)</h3>
+                    
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="images/project3.png" alt="BRF Circuit Project Preview" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #22c55e; box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);">
+                    </div>
+
+                    <p>
+                        <strong>ภาพรวมโปรเจกต์:</strong> การศึกษาวิเคราะห์ ออกแบบ และสร้างชิ้นงานแผงวงจรอิเล็กทรอนิกส์จริง (PCB) สำหรับวงจรกำจัดแถบความถี่ผ่านชนิดแอกทีฟ (Active Band-Reject Filter)[cite: 2] เพื่อลดสัญญาณรบกวนในช่วงความถี่ที่ไม่ต้องการและเพิ่มประสิทธิภาพในระบบสื่อสารหรือเครื่องเสียง[cite: 2]
+                    </p>
+
+                    <p>
+                        <strong>1. การออกแบบและการทำงานของวงจร:</strong><br>
+                        - ออกแบบวงจร Active Filter โดยใช้ Op-Amp LM741 ร่วมกับอุปกรณ์ Passive (ตัวต้านทานและตัวเก็บประจุ)[cite: 2]<br>
+                        - กำหนดความถี่กลาง (Center Frequency: f0) ที่ระดับ 3 kHz[cite: 2]<br>
+                        - กรองแถบความถี่ช่วงสตอปแบนด์ (Stopband) ออกได้อย่างแม่นยำ และยอมให้ความถี่ช่วงพาสแบนด์ (Passband) ผ่านได้[cite: 2]
+                    </p>
+
+                    <p>
+                        <strong>2. อุปกรณ์และขั้นตอนการทำชิ้นงานจริง (Hardware Realization):</strong><br>
+                        - อุปกรณ์หลัก: IC LM741, C (56nF, 10nF), R (500Ω, 5kΩ, 10kΩ, 15kΩ)[cite: 2]<br>
+                        - ขั้นตอนผลิตแผ่น PCB: ออกแบบลายวงจรผ่านโปรแกรม -> พิมพ์ลายลงกระดาษโฟโต้ -> รีดลายลงแผ่นทองแดง -> กัดแผ่นปริ้นด้วยน้ำยากัด PCB -> เจาะรูด้วยสว่านมือ และบัดกรีอุปกรณ์[cite: 2]<br>
+                        - การทดสอบ: ต่อจ่ายสัญญาณจาก Signal Generator และวัดสัญญาณขา V-out ด้วย Oscilloscope เพื่อเก็บบันทึกความถี่ตอบสนอง[cite: 2]
+                    </p>
+
+                    <p>
+                        <strong>3. ผลลัพธ์และทักษะที่ได้:</strong><br>
+                        - สามารถผลิตแผงวงจร PCB ที่ใช้งานได้จริงตั้งแต่กระบวนการออกแบบจนถึงประกอบ[cite: 2]<br>
+                        - เข้าใจการคำนวณพารามิเตอร์ของ Active Filter เช่น ค่าแบนด์วิดธ์ (BW) และค่า Q (Quality Factor)[cite: 2]<br>
+                        - เชี่ยวชาญการใช้อุปกรณ์วัดทางอิเล็กทรอนิกส์ (Function Generator, Oscilloscope, Multimeter) ในการทดสอบวงจร[cite: 2]
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
